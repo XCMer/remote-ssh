@@ -26,11 +26,21 @@ You will:
 
 ## Steps
 
-### 1. Connect the desktop
+### 1. Configure the server
+
+```
+vim /etc/ssh/sshd_config
+
+And make sure:
+
+GatewayPorts clientspecified
+```
+
+### 2. Connect the desktop
 
 Run `desktop/connect.sh` on your desktop. It'll initiate a session to your relay server.
 
-### 2. Connect from your laptop
+### 3. Connect from your laptop
 
 Run `client/connect.sh` to ssh into your desktop.
 
