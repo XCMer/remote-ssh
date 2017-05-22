@@ -34,6 +34,10 @@ vim /etc/ssh/sshd_config
 And make sure:
 
 GatewayPorts clientspecified
+
+And then:
+
+sudo /etc/init.d/ssh restart
 ```
 
 ### 2. Connect the desktop
